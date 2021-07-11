@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gsg_aziz2/Screens/FavoriteScreen.dart';
-import 'package:gsg_aziz2/Screens/ProductCard.dart';
-import 'package:gsg_aziz2/model/brain.dart';
+import 'package:gsg_aziz2/assigment/model/brain.dart';
+
+import 'FavoriteScreen.dart';
+import 'ProductCard.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gsg_aziz2/model/brain.dart';
+import 'package:gsg_aziz2/assigment/model/brain.dart';
 
 import 'ProductCard.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gsg_aziz2/model/brain.dart';
+import 'package:gsg_aziz2/assigment/model/brain.dart';
 
 class ProductCard extends StatefulWidget {
   // String title;
@@ -7,9 +7,7 @@ class ProductCard extends StatefulWidget {
   // bool isFav;
   ProductBrain product;
 
-  ProductCard({ProductBrain product}) {
-    this.product = product;
-  }
+  ProductCard({ProductBrain product});
 
   @override
   _ProductCardState createState() => _ProductCardState();

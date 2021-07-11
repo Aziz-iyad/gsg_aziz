@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screens/HomeScreen.dart';
-import 'Screens/ProductCard.dart';
+import 'package:gsg_aziz2/assigment2/form_ui/Form_ui2.dart';
 
 void main() {
-  runApp(MaterialApp(home: HomeScreen()));
+  runApp(MaterialApp(home: Form_ui2()));
 }
