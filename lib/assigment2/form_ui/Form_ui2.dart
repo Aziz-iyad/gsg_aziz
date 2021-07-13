@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gsg_aziz2/assigment2//navigator/navigator.dart';
+import 'package:gsg_aziz2/assigment2/Router.dart';
 import 'package:string_validator/string_validator.dart';
 import 'MerchantPage.dart';
 
@@ -15,6 +16,7 @@ class _Form_ui2State extends State<Form_ui2> {
   userType keyValue = userType.customer;
   String email;
   String password;
+
   setEmail(String email) {
     this.email = email;
   }
@@ -36,7 +38,9 @@ class _Form_ui2State extends State<Form_ui2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('aziz'),
+      ),
       body: Form(
         key: formKey,
         child: Column(
@@ -132,9 +136,17 @@ class _Form_ui2State extends State<Form_ui2> {
                         ),
                       ),
                       ElevatedButton(
-                          onPressed: () {
+                          onPressed: () async {
                             saveForm();
-                            Navigator.push(
+                            AppRouter.router.pushFunction(
+                              NavigatorPage(
+                                email: email,
+                                password: password,
+                                isCustomer: true,
+                              ),
+                            );
+                            // Navigator.of(context).pushNamed('homePage');
+                            /* String result = await Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => NavigatorPage(
@@ -144,6 +156,7 @@ class _Form_ui2State extends State<Form_ui2> {
                                 ),
                               ),
                             );
+                            print(result);*/
                           },
                           child: Text('Submite')),
                     ],
